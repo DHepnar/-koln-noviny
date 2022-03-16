@@ -1,0 +1,3 @@
+exports.zobrazDetail = (dotaz, odpoved) => {
+    
+};
