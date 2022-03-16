@@ -8,5 +8,6 @@ const controller = require(path.join(__dirname, '..', 'controllers', 'prispevekC
 
 
 router.get('/detail', controller.zobrazDetail);
+router.get('/prehled', controller.zobrazPrehled);
 
 module.exports = router;
