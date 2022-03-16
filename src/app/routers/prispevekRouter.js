@@ -6,6 +6,7 @@ const router = express.Router();
 
 const controller = require(path.join(__dirname, '..', 'controllers', 'prispevekController.js'))
 
-router.get('/detail', )
+
+router.get('/detail', controller.zobrazDetail)
 
 module.exports = router;
