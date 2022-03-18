@@ -12,7 +12,10 @@ app.set('views', path.join(__dirname, 'views'));
 
 app.use(express.static(path.join(__dirname, '..', 'public')));
 
+app.get('/', (dotaz, odpoved) => odpoved.redirect('/prispevky'));
+
 app.use('/admin', adminRouter);
 app.use('/prispevky', prispevekRouter);
+app.use('/', prispevekRouter);
 
 module.exports = app;
