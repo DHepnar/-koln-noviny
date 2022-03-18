@@ -12,14 +12,20 @@
             <h1>Admin page</h1>
         </header>
         <main>
-            <div id="login">
-                <input type="text" id="jmeno" placeholder="Jméno...">
-                <br>
-                <input type="password" id="heslo" placeholder="Heslo...">
-                <br>
-                <button id="prihlasit">Přihlásit se</button>
-                <span id="hlaseni" style="color: red;"></span>
-            </div>
+            <form action="upload_form">
+                <div id="login">
+                    <div>
+                        <label for="">Jméno</label>
+                        <input type="text" id="jmeno" placeholder="Jméno...">
+                    </div>
+                    <div>
+                        <label for="">Heslo</label>
+                        <input type="password" id="heslo" placeholder="Heslo...">
+                    </div>
+                    <button id="prihlasit">Přihlásit se</button>
+                </div>
+            </form>
+            
             <a href="../prispevky/prehled">Zpět na hlavní stránku</a>
         </main>
         <footer>
