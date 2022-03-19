@@ -30,8 +30,10 @@ button{
     color: black;
     border-radius: 0.5em;
     width: 50%;
-    height: 2em;
     border: none;
+    margin-top:1em;
+    padding-top: 0.5em;
+    padding-bottom: 0.5em;
 }
 .prvek_formulare{
     
@@ -47,7 +49,6 @@ input{
     height: 30px;
 }
 .button{
-    
     width: 100%;
 }
 #odkazzpet{
