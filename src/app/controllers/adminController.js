@@ -5,3 +5,4 @@ exports.zobrazAdmin_page = (dotaz, odpoved) => {
 exports.zobrazUploadform = (dotaz, odpoved) => {
     odpoved.render('admin/upload_form');
 };
+

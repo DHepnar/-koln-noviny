@@ -10,5 +10,7 @@ const controller = require(path.join(__dirname, '..', 'controllers', 'prispevekC
 router.get('/detail', controller.zobrazDetail);
 router.get('/prehled', controller.zobrazPrehled);
 router.get('/', controller.zobrazPrehled);
+router.get('/pridani', controller.zobrazPridani);
+router.get('/odebrat', controller.zobrazOdebrat);
 
 module.exports = router;
