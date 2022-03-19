@@ -1,0 +1,63 @@
+#container{
+    width: 100%;
+    background-color: white;
+    text-align: center;
+}
+main{
+    width: 100%;
+}
+#odkazzpet{
+    margin: 1em;
+    width: 20%;
+    background-color: lightgray;
+    text-decoration: none;  
+    padding-top: 0.5em;
+    padding-bottom: 0.5em;
+    padding-left: 2em;
+    padding-right: 2em;
+    color: black;
+    border-radius: 0.5em;
+    
+}
+#odkazzpet:hover{
+    background-color: gray;
+    color: white;
+    transition: 0.3s;
+}
+#box_s_tlacitky{
+    width: 30%;
+
+    margin-top: 2em;
+    margin-left: 35%;
+    
+}
+.tlacitka{
+    border: 1px solid darkblue;
+    margin: 1em;
+    padding: 1em;
+    background-color: lightgray;
+}
+.tlacitka > *{
+    text-decoration: none;
+    color: black;
+    font-size: 1.5em;
+    padding: 0.5em;
+    padding-left: 34%;
+    padding-right: 34%;
+    
+}
+.tlacitka:hover{
+    background-color: gray;
+    color: white;
+    transition: 0.3s;
+}
+.tlacitka > *:hover{
+    background-color: gray;
+    color: white;
+    transition: 0.3s;
+}
+footer{
+    position: fixed;
+    bottom: 0;
+    width: 99.2%;
+}

@@ -1,0 +1,36 @@
+#container{
+    width: 100%;
+    background-color: white;
+    text-align: center;
+}
+main{
+    width: 100%;
+}
+footer{
+    position: fixed;
+    bottom: 0;
+    width: 99.2%;
+}
+#prispevky{
+    border: 1px solid black;
+    min-height: 60vh;
+    width: 80%;
+    margin-left: 10%;
+    margin-top: 1em;
+}
+#odkazzpet{
+    background-color: lightgray;
+    width: 20%;
+    text-decoration: none;
+    padding-bottom: 0.5em;
+    padding-top: 0.5em;
+    padding-left: 2em;
+    padding-right: 2em;
+    color: black;
+    border-radius: 0.5em;
+}
+#odkazzpet:hover{
+    background-color: gray;
+    color: white;
+    transition: 0.3s;
+}
