@@ -13,4 +13,6 @@ router.get('/', controller.zobrazPrehled);
 router.get('/pridani', controller.zobrazPridani);
 router.get('/odebrat', controller.zobrazOdebrat);
 
+router.post('/pridat', controller.pridat)
+
 module.exports = router;
