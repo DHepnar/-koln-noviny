@@ -33,7 +33,7 @@ function pridat() {
             })
             .then(odpoved => odpoved.json())
             .then(reakce => {
-                if(uspech) {
+                if(reakce.uspech) {
                     location.hred = reakce.url;
                 }
             });

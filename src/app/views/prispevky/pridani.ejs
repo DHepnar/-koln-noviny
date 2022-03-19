@@ -7,42 +7,39 @@
     <title>Nový příspěvek</title>
     <script src="/js/lib/jquery.js"></script>
     <script src="/js/pridani.js"></script>
+    <link rel="stylesheet" href="/css/pridat.css">
 </head>
 <body>
+    <div id="container">
+        <header id="hlavicka">
 
-    <main>
-        <h2>Nový příspevěk</h2>
-        <div id="odkaz_na_uplaod">
-            <a href="/admin/upload_form">Zpět</a>
-        </div>
-        <div id="pridani_prispevku">
-            <div class="prvek_formulare" id="nadpis_clanku">
-                <label>Nadpis</label>
-                <input type="text" id="input_nadpis" placeholder="Nadpis...">
+        </header>
+        <main>
+            <h2>Nový příspěvek</h2>           
+                <a href="/admin/upload_form" id="odkazzpet">Zpět</a>
+            <div id="pridani_prispevku">
+                <div class="prvek_formulare" id="nadpis_clanku">                  
+                    <input type="text" id="input_nadpis" placeholder="Nadpis...">
+                </div>
+                <div class="prvek_formulare">           
+                    <input type="datetime" id="input_datum" placeholder="Datum">                  
+                </div>
+                <div class="prvek_formulare">
+  
+                    <textarea id="input_clanek" placeholder="Článek..." itemid="clanek"></textarea>
+                </div>
+                <div class="prvek_formulare">
+                    <input type="text" id="input_autor" placeholder="Autor...">
+                </div>
+                <div class="button" id="butt">
+                    <button id="pridat_prispevek">Přidat příspěvek</button>
+                </div>
+                <span id="hlaseni" style="color: red;"></span>
             </div>
-            <div class="prvek_formulare">
-                <label>Datum</label>
-                <input type="datetime" id="input_datum" placeholder="Datum">
-                
-            </div>
-            <div class="prvek_formulare">
-                <label>Článek</label>
-                
-                <textarea id="input_clanek" placeholder="Článek..."></textarea>
-            </div>
-            <div class="prvek_formulare">
-                <label>Autor</label>
-                <input type="text" id="input_autor" placeholder="Autor...">
-            </div>
-            <button id="pridat_prispevek">Přidat příspevěk</button>
-            <span id="hlaseni" style="color: red;"></span>
-            
-
-
-
-        </div>
-
-    </main>
+        </main>
+        <footer id="paticka">
     
+        </footer>
+    </div>  
 </body>
 </html>
