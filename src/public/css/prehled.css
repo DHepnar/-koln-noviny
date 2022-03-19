@@ -1,3 +1,12 @@
 body{
     text-align: center;
 }
+main{
+    min-width: 100vh;
+}
+
+footer{
+    position: fixed;
+    bottom: 0;
+    width: 99.2%;
+}
