@@ -9,4 +9,5 @@ const controller = require(path.join(__dirname, '..', 'controllers', 'adminContr
 router.get('/admin_page', controller.zobrazAdmin_page);
 router.get('/upload_form', controller.zobrazUploadform);
 
+
 module.exports = router;

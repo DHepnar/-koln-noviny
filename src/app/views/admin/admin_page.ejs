@@ -12,25 +12,62 @@
             <h1>Admin page</h1>
         </header>
         <main>
-            <form action="upload_form">
-                <div id="login">
-                    <div>
-                        <label for="">Jméno</label>
-                        <input type="text" id="jmeno" placeholder="Jméno...">
+            <div id="login">
+                <div>
+                    <div id="text_jmeno_heslo">
+                        <p id="prihlasovaci_jmeno">Jméno</p>
+                        <label for="name"></label>
+                        <input type="text" id="username" placeholder="Jméno.."  required> <br>
                     </div>
-                    <div>
-                        <label for="">Heslo</label>
-                        <input type="password" id="heslo" placeholder="Heslo...">
+                    <div id="text_jmeno_heslo">
+                        <p id="heslo">Heslo</p>
+                        <label for="password"></label>
+                        <input type="password" id="password" placeholder="Heslo.."  required>
                     </div>
-                    <button id="prihlasit">Přihlásit se</button>
                 </div>
-            </form>
+            </div>
+            <div id="button_submit">
+                <input id="submit" type="submit" onclick="SendLoginInfo()" value="Přihlásit"></a>
+            </div>
+
             
             <a href="../prispevky/prehled">Zpět na hlavní stránku</a>
+            <script>
+                var input = document.getElementById("password");
+                    input.addEventListener("keyup", function(event) {
+                    if (event.keyCode === 13) {
+                        event.preventDefault();
+                        document.getElementById("submit").click();
+                    }
+                });
+            </script>
         </main>
         <footer>
 
         </footer>
+        <script>
+            function SendLoginInfo(){
+                fetch('/admin/loginInfo', {
+                    method:"POST",
+                    headers: {"Content-type":"application/json"},
+                    body:JSON.stringify({   
+                        "username":username.value,
+                        "password":password.value
+                        })
+                }).then(response => response.json()).then(data => {
+                    switch(data.status) {
+                       case 100: {
+                           location.href = "/admin/compare"
+                           break;
+                       }
+                       default: {
+                           console.log("Error", data.status)
+                           break;
+                       }
+                    }
+                })
+            }
+        </script>
     </div>   
 </body>
 </html>
