@@ -19,10 +19,10 @@ exports.zobrazOdebrat = (dotaz, odpoved) => {
     odpoved.render('prispevky/odebrat');
 }
 exports.pridat = (dotaz, odpoved) => {
-    let nadpis = dotaz.body.nadpis;
-    let datum = dotaz.body.datum;
-    let telo = dotaz.body.telo;
-    let autor = dotaz.body.autor;
+    let nadpis = dotaz.body.input_nadpis;
+    let datum = dotaz.body.input_datum;
+    let telo = dotaz.body.input_clanek;
+    let autor = dotaz.body.input_autor;
 
     prispevky.pridat(nadpis, datum, telo, autor);
 

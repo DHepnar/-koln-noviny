@@ -7,7 +7,7 @@ if(!db.has('next_id')) {
     db.set('next_id', 1);
 }
 
-exports. pridat = (nadpis, datum, telo, autor) => {
+exports.pridat = (nadpis, datum, telo, autor) => {
     let id = db.get('next_id');
      
     db.set('next_id', id + 1);

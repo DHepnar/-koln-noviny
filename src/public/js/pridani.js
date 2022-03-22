@@ -1,4 +1,4 @@
-$(document).ready(() =>{
+/*$(document).ready(() =>{
     $('#pridat').click(pridat);
 });
 function pridat() {
@@ -32,11 +32,6 @@ function pridat() {
                 }),
             })
             .then(odpoved => odpoved.json())
-            .then(reakce => {
-                if(reakce.uspech) {
-                    location.hred = reakce.url;
-                }
-            });
         }
 
-}
+}*/
