@@ -1,8 +1,37 @@
 body{
     text-align: center;
 }
+
+#nadpis{
+    border: 1px solid black;
+    background-color: #223974;
+}
+
+#h1 {
+    text-align: center;
+    color: white;
+    font-size: 64px;
+}
+
+#navigace {
+    text-align: right;
+}
+
+#text_admin {
+    margin-right: 150px ;
+    padding: 10px; 
+    font-size: 22px; 
+    cursor: pointer; 
+    color: #223974; 
+    border: none; 
+    border-radius: 15px; 
+    box-shadow: 0 9px #223974; 
+    width: 70px;
+}
+
 main{
     min-width: 100vh;
+    height: 600px;
 }
 
 footer{
