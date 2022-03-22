@@ -79,7 +79,7 @@ button:hover{
 }
 textarea{
     resize: none;
-    height: 400px;
+    height: 200px;
 }
 footer{
     position: fixed;
