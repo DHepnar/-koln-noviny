@@ -5,33 +5,34 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="/css/hlavicka_paticka.css">
+    <link rel="stylesheet" href="/css/admin_page.css">
     <title>Admin page</title>
 </head>
 <body>
     <div id="container">
-        <header style="border: 1px solid black; background-color: #223974;">
-            <h1 style="text-align: center; color: white;; font-size: 64px;">Admin page</h1>
+        <header>
+            <h1>Admin page</h1>
         </header>
-        <nav style="text-align: right;">
-            <a href="../prispevky/prehled" style="margin-right: 150px ;padding: 10px ;padding-top: 10px ;font-size: 22px; cursor: pointer; color: #223974; border: none; border-radius: 15px; box-shadow: 0 9px #223974; width: 70px; ">Zpět na hlavní stránku</a>
+        <nav id="navigace">
+            <a href="../prispevky/prehled">Zpět na hlavní stránku</a>
         </nav>
-        <main style="margin-top: 20px; height: 600px;">
+        <main>
             <div id="login">
-                <div style="font-size: 24px; width: 400px; text-align: center; margin: 0 auto; margin-top: 25px; margin-bottom: 25px; padding: 30px; height: 300px;">
+                <div id="prihlasovani">
                     <div id="text_jmeno_heslo">
-                        <p id="prihlasovaci_jmeno" style="border-bottom: 1px solid black;">Jméno</p>
+                        <p id="prihlasovaci_jmeno">Jméno</p>
                         <label for="name"></label>
                         <input style="width: 100%;" type="text" id="username" placeholder="Jméno.."  required> <br>
                     </div>
                     <div id="text_jmeno_heslo">
-                        <p id="heslo" style="border-bottom: 1px solid black; margin-top: 50px;">Heslo</p>
+                        <p id="heslo">Heslo</p>
                         <label for="password"></label>
                         <input style="width: 100%;" type="password" id="password" placeholder="Heslo.."  required>
                     </div>
                 </div>
             </div>
-            <div id="button_submit" style="width: 400px; text-align: right; margin: 0 auto;">
-                <input style="border: 1px solid black; font-size: 24px; padding: 10px;" id="submit" type="submit" onclick="SendLoginInfo()" value="Přihlásit"></a>
+            <div id="button_submit">
+                <input id="submit" type="submit" onclick="SendLoginInfo()" value="Přihlásit"></a>
             </div>
 
             <script>
@@ -44,8 +45,8 @@
                 });
             </script>
         </main>
-        <footer style="background: #223974; margin-left: auto; margin-right: auto; text-align: center; height: 100px;">
-            <p style="padding: 30px; text-align: center; color: white;"><i>Dominik Hepnar°, Stanislav Mlejnek°, Radek Lukáš°</i></p>
+        <footer>
+            <p><i>Dominik Hepnar°, Stanislav Mlejnek°, Radek Lukáš°</i></p>
         </footer>
         <script>
             function SendLoginInfo(){

@@ -1,0 +1,55 @@
+header {
+    border: 1px solid black; 
+    background-color: #223974;
+}
+h1 {
+    text-align: center; 
+    color: white; 
+    font-size: 64px;
+}
+nav {
+    text-align: right;
+}
+nav a {
+    margin-right: 150px;
+    padding: 10px;
+    padding-top: 10px;
+    font-size: 22px; 
+    cursor: pointer; 
+    color: #223974; 
+    border: none; 
+    border-radius: 15px; 
+    box-shadow: 0 9px #223974; 
+    width: 70px;
+}
+main {
+    margin-top: 20px; 
+    height: 600px;
+}
+#prihlasovani{
+    font-size: 24px; 
+    width: 400px; 
+    text-align: center; 
+    margin: 0 auto; 
+    margin-top: 25px; 
+    margin-bottom: 25px; 
+    padding: 30px; 
+    height: 300px;
+}
+#prihlasovaci_jmeno{
+    border-bottom: 1px solid black;
+}
+#heslo{
+    border-bottom: 1px solid black; 
+    margin-top: 50px;
+}
+#button_submit{
+    width: 400px; 
+    text-align: right; 
+    margin: 0 auto;
+}
+#submit{
+    border: 1px solid black; 
+    font-size: 24px; 
+    padding: 10px;
+}
